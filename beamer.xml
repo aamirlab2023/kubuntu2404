@@ -1,0 +1,274 @@
+<snippets filetypes="LaTeX" authors="Aamir Alaud Din" name="beamer" license="LGPL v3+" namespace="beamer">
+ <script>function fileName() { return document.fileName(); }
+function fileUrl() { return document.url(); }
+function encoding() { return document.encoding(); }
+function selection() { return view.selectedText(); }
+function year() { return new Date().getFullYear(); }
+function upper(x) { return x.toUpperCase(); }
+function lower(x) { return x.toLowerCase(); }
+</script>
+ <item>
+  <match>template</match>
+  <fillin>\documentclass[aspectratio=169]{beamer}
+\usetheme{Madrid}
+\usepackage[table]{xcolor}
+\usepackage{listings}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{changepage}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{scrextend}
+\usepackage{blindtext}
+\usepackage{lipsum}
+\usepackage{tcolorbox}
+\usepackage{courier}
+\usepackage{tabto}
+\usepackage{fontspec}
+\setmainfont{Ubuntu}
+\setsansfont{Ubuntu}
+\setmonofont{Noto Mono}
+\usepackage{unicode-math}
+%\newcommand{\inlcode}[1]{%
+%    \color{orange}\mintinline[bgcolor=lightgray, frame=single]{python}{#1}%
+%}
+%\newtcolorbox{inlinecode}{
+%    colback=lightgray, % Background color
+%    arc=10pt, % Corner roundness (increase for more curve)
+%}
+\usepackage{minted}
+\usepackage[tikz]{bclogo}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amsopn}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{ragged2e}
+\usepackage{wrapfig}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{dirtytalk}
+\usepackage{graphicx}
+\usepackage{caption}
+%\captionsetup[figure]{font=large}
+%\captionsetup{labelsep=period}
+%\captionsetup{justification=centering}
+\newcounter{figurenumber}
+\newcommand{\figcaption}[1]{%
+    \refstepcounter{figurenumber} % Increment counter
+    \vspace{0.3cm} % Add space between image and caption
+    \centering % Ensure text is centered
+    \large
+    \color{orange}{\textbf{Figure \thefigurenumber.}} %
+    \textcolor{black}{#1} % Caption text
+}
+\usepackage[autopunct=true]{csquotes}
+\usepackage{color, colortbl}
+\usepackage{hyperref}
+\usepackage{chemfig}
+\setbeamertemplate{itemize items}[triangle]
+\usefonttheme[onlymath]{serif}
+\setbeamertemplate{page number in head/foot}[totalframenumber]
+\setbeamertemplate{nvaigation symbols}{}
+\beamertemplatenavigationsymbolsempty
+\graphicspath{{../images/}}
+\AtBeginSection[]
+{
+	\begin{frame}
+		\frametitle{\LARGE \color{orange}{Contents}}
+		\tableofcontents[currentsection]
+	\end{frame}
+}
+\makeatletter
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Slide No. 1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[\color{orange}{Fundamentals of Programming}]{\color{orange}{Fundamentals 
+of Programming}} % Course Title
+\subtitle[]{}
+\author[\color{orange}{Dr. Aamir Alaud Din}]{\textcolor{orange}{Dr. Aamir Alaud 
+Din}}
+\institute[]{\large \color{ForestGreen}{The pathway to Machine Learning and
+Artificial Intelligence}}
+\date[\color{orange}{\today}]{\today}
+\begin{document}
+\frame{\titlepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Slide No. 2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t, fragile]
+\frametitle{\LARGE \color{orange}{Contents}}
+\tableofcontents
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Section No. 1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Slide No. 3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t, fragile]
+\frametitle{\LARGE \color{orange}{}}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% SLIDE-LAST SLIDE: THANK YOU
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\begin{center}
+\includegraphics[width=\textwidth]{thanks}
+\end{center}
+\end{frame}
+\end{document}</fillin>
+ </item>
+ <item>
+  <match>section</match>
+  <fillin>%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Section No.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Slide No. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Slide No.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t, fragile]
+\frametitle{\LARGE \color{orange}{}}
+\large
+
+\end{frame}</fillin>
+ </item>
+ <item>
+  <match>frame</match>
+  <fillin>%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Slide No.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t, fragile]
+\frametitle{\LARGE \color{orange}{}}
+\large
+
+\end{frame}</fillin>
+ </item>
+ <item>
+  <match>itemize</match>
+  <fillin>\begin{itemize}
+\setlength\itemsep{1em}
+\item 
+\item
+\item
+\item
+\item
+\end{itemize}</fillin>
+ </item>
+ <item>
+  <match>inlinecode</match>
+  <fillin>\colorbox{black!15}{\color{blue}{\texttt{}}}</fillin>
+ </item>
+ <item>
+  <match>python</match>
+  <fillin>\begin{minted}[fontsize=\small, bgcolor=lightgray]{python}
+
+\end{minted}</fillin>
+ </item>
+ <item>
+  <match>italic</match>
+  <fillin>\textit{}</fillin>
+ </item>
+ <item>
+  <match>fig_uncap</match>
+  <fillin>\begin{center}
+\includegraphics[height=0.9\textheight]{}
+\end{center}</fillin>
+ </item>
+ <item>
+  <match>fig_cap</match>
+  <fillin>\begin{center}
+\color{orange}{Figure . }\color{black}{}
+\end{center}</fillin>
+ </item>
+ <item>
+  <match>text_block</match>
+  <fillin>\begin{block}{\color{orange}{}}
+
+\end{block}</fillin>
+ </item>
+ <item>
+  <match>heading</match>
+  <fillin>\color{orange}{}\color{black}\newline</fillin>
+ </item>
+ <item>
+  <match>equation_unnum</match>
+  <fillin>\begin{equation*}
+
+\end{equation*}</fillin>
+ </item>
+ <item>
+  <match>equation_num</match>
+  <fillin>\begin{equation}
+
+\end{equation}</fillin>
+ </item>
+ <item>
+  <match>equation_align</match>
+  <fillin>\begin{align}
+
+\end{align}</fillin>
+ </item>
+ <item>
+  <match>equation_long</match>
+  <fillin>\begin{multiline}
+
+\end{multiline}</fillin>
+ </item>
+ <item>
+  <match>equation_unaligned</match>
+  <fillin>\begin{gather}
+
+\end{gather}</fillin>
+ </item>
+ <item>
+  <match>enumerate</match>
+  <fillin>\begin{enumerate}
+\setlength\itemsep{1em}
+\item 
+\item
+\item
+\item
+\item
+\end{enumerate}</fillin>
+ </item>
+ <item>
+  <match>revision</match>
+  <fillin>%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Slide No. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t, fragile]
+\frametitle{\LARGE \color{orange}{}}
+\begin{center}
+\vfill
+\includegraphics[width=1.0\textwidth]{rev}
+\vfill
+\end{center}
+\end{frame}</fillin>
+ </item>
+ <item>
+  <match>exercises</match>
+  <fillin>%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Slide No. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t, fragile]
+\frametitle{\LARGE \color{orange}{}}
+\begin{center}
+\vfill
+\includegraphics[width=1.0\textwidth]{exercises}
+\vfill
+\end{center}
+\end{frame}</fillin>
+ </item>
+</snippets>
