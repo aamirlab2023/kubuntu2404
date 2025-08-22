@@ -1,0 +1,568 @@
+{
+  "Insert Title of the Lecture": {
+    "prefix": "title",
+    "body": [
+      "<h1 style=\"color: green; text-align: center; line-height: 2.0;\">📈 Probability and Statistics</h1>",
+      "<br>",
+      "<h1 style=\"color: blue; text-align: center; line-height: 2.0;\">📝 $1</h1>",
+      "<br>",
+      "<h1 style=\"color: red; text-align: center; line-height: 2.0;\">🎓 Dr. Aamir Alaud Din</h1>",
+      "<br>",
+      "<h1 style=\"color: green; text-align: center; line-height: 2.0;\">🗓️ $2, 2025</h1>",
+      "<br>$0"
+    ],
+    "description": "Inserts title of the lecture"
+  },
+
+  "Insert Blue Color Text": {
+    "prefix": "btext",
+    "body": [
+      "<span style=\"color: blue;\">$1</span>$0"
+    ],
+    "description": "Inserts title of the lecture"
+  },
+
+  "Insert Red Color Text": {
+    "prefix": "rtext",
+    "body": [
+      "<span style=\"color: red;\">$1</span>$0"
+    ],
+    "description": "Inserts title of the lecture"
+  },
+
+  "Insert Green Color Text": {
+    "prefix": "gtext",
+    "body": [
+      "<span style=\"color: green;\">$1</span>$0"
+    ],
+    "description": "Inserts title of the lecture"
+  },
+
+  "Insert Orange Color Text": {
+    "prefix": "otext",
+    "body": [
+      "<span style=\"color: orange;\">$1</span>$0"
+    ],
+    "description": "Inserts title of the lecture"
+  },
+
+  "Insert Boldface Text": {
+    "prefix": "bold",
+    "body": [
+      "<strong>$1</strong>$0"
+    ],
+    "description": "Inserts title of the lecture"
+  },
+
+  "Insert Table of Contents Text": {
+    "prefix": "contents",
+    "body": [
+      "<h2 style=\"color: black; background-color: orange; border-left: 20px solid red; border-radius: 10px; line-height: 2.0; padding-left: 10px;\">Contents</h2>",
+      "<div style=\"font-size: 24px; font-weight: bold; line-height: 2.0; padding-left: 40px;\">",
+	    "  <ol type=\"1\">",
+  		"    <li>Recap</li>",
+		  "    <li>Objectives</li>",
+		  "    <li>The Why Section</li>",
+		  "    <li></li>",
+  		"    <li>Summary</li>",
+		  "    <li>Exercises</li>",
+	    "  </ol>",
+      "</div>"
+    ],
+    "description": "Inserts table of contents of the lecture"
+  },
+
+  "Insert Recap": {
+    "prefix": "recap",
+    "body": [
+      "<h2 style=\"color: black; background-color: orange; border-left: 20px solid red; border-radius: 10px; line-height: 2.0; padding-left: 10px;\">1. Recap</h2>",
+      "$1"
+    ],
+    "description": "Inserts title of the lecture"
+  },
+
+  "Insert Exercises": {
+    "prefix": "exercises",
+    "body": [
+      "<h2 style=\"color: black; background-color: orange; border-left: 20px solid red; border-radius: 5px; line-height: 2.0; padding-left: 10px;\">$1. Exercises</h2>",
+      "<h3 style=\"color: blue; font-weight: bold; line-height: 2.0;\">Exercise 1</h3>",
+      "<p style=\"line-height: 2.0; text-align: justify;\">$2</p>$0"
+    ],
+    "description": "Inserts exercises"
+  },
+
+  "Insert Definition Text Box": {
+    "prefix": "definition",
+    "body": [
+      "<style>",
+      ".definition-box {",
+      "width: 100%;",
+      "border: 2px solid navy;",
+      "border-radius: 5px;",
+      "overflow: hidden;",
+      "}",
+      ".definition-header {",
+      "background-color: navy;",
+      "color: white;",
+      "padding: 10px;",
+      "font-weight: bold;",
+      "}",
+      ".definition-body {",
+      "background-color: white;",
+      "color: navy;",
+      "padding: 15px;",
+      "line-height: 2.0;",
+      "text-align: justify;",
+      "}",
+      "</style>",
+      "",
+      "<div class=\"definition-box\">",
+      "  <div class=\"definition-header\">Definition: $1</div>",
+      "  <div class=\"definition-body\">",
+      "    $2",
+      "  </div>",
+      "</div>$0"
+    ],
+    "description": "Inserts definition box"
+  },
+
+  "Insert General Section": {
+    "prefix": "gsection",
+    "body": [
+      "<h2 style=\"color: black; background-color: orange; border-left: 20px solid red; border-radius: 5px; line-height: 2.0; padding-left: 10px;\">$1</h2>",
+      "<div style=\"line-height: 2.0;\">",
+	    "  <ul type=\"list-style-type:disc\">",
+		  "    <li>$2</li>",
+		  "    <li>$3</li>",
+		  "    <li>$4</li>",
+		  "    <li>$5</li>",
+		  "    <li>$6</li>",
+	    "  </ul>",
+      "</div>$0"
+    ],
+    "description": "Inserts a general section in the document"
+  },
+
+  "Insert Level 3 Heading": {
+    "prefix": "heading",
+    "body": [
+      "<h3 style=\"color: blue; font-weight: bold; line-height: 2.0;\">$1</h3>$0",
+    ],
+    "description": "Inserts level 3 heading in the document"
+  },
+
+  "Insert Red Heading": {
+    "prefix": "redheading",
+    "body": [
+      "<h3 style=\"color: red; font-weight: bold; line-height: 2.0;\">$1</h3>$0",
+    ],
+    "description": "Inserts red color heading in the document"
+  },
+
+  "Insert List Elements": {
+    "prefix": "elements",
+    "body": [
+      "<li>$1</li>",
+      "<li>$2</li>",
+      "<li>$2</li>",
+      "<li>$2</li>",
+      "<li>$3</li>$0"
+    ],
+    "description": "Inserts list elements"
+  },
+
+  "Insert Figure in Document": {
+    "prefix": "figure",
+    "body": [
+      "<figure style=\"margin: 0 auto; text-align: center;\">",
+      "  <img src=\"../images/$1.png\" width=\"100%\" alt=\"$2\"><br><br>",
+      "  <figcaption style=\"text-align: center;\"><strong>Figure $3.</strong> $4</figcaption>",
+      "</figure><br>$0"
+    ],
+    "description": "Inserts figure in the document"
+  },
+
+  "Insert Objectives Section": {
+    "prefix": "objectives",
+    "body": [
+      "<h2 style=\"color: black; background-color: orange; border-left: 20px solid red; border-radius: 5px; line-height: 2.0; padding-left: 10px;\">2. Objectives</h2>",
+      "<p style=\"line-height: 2.0; text-align: justify;\">After <span style=\"color: green;\">taking this lecture</span> and <span style=\"color: red;\">studying</span>, you should be able to:</p>",
+      "<div style=\"line-height: 2.0; text-align: justify;\">",
+	    "  <ul style=\"list-style-type:disc\">",
+		  "    <li>$1</li>",
+		  "    <li>$2</li>",
+		  "    <li>$3</li>",
+		  "    <li>$4</li>",
+	    "  </ul>",
+      "</div>$0"
+    ],
+    "description": "Inserts objectives in the lecture"
+  },
+
+  "Insert The Why Section": {
+    "prefix": "why",
+    "body": [
+      "<h2 style=\"color: black; background-color: orange; border-left: 20px solid red; border-radius: 5px; line-height: 2.0; padding-left: 10px;\">3. The Why Section</h2>",
+      "<div style=\"line-height: 2.0; text-align: justify;\">",
+	    "  <ul style=\"list-style-type:disc\">",
+		  "    <li>$1</li>",
+		  "    <li>$2</li>",
+		  "    <li>$3</li>",
+		  "    <li>$4</li>",
+	    "  </ul>",
+      "</div>$0"
+    ],
+    "description": "Inserts the why section in the lecture"
+  },
+
+  "Insert Summary": {
+    "prefix": "summary",
+    "body": [
+      "<h2 style=\"color: black; background-color: orange; border-left: 20px solid red; border-radius: 5px; line-height: 2.0; padding-left: 10px;\">$1. Summary</h2>",
+      "<div style=\"line-height: 2.0; text-align: justify;\">",
+	    "  <ul style=\"list-style-type:disc\">",
+		  "    <li>$2</li>",
+		  "    <li>$3</li>",
+		  "    <li>$4</li>",
+		  "    <li>$5</li>",
+	    "  </ul>",
+      "</div>$0"
+    ],
+    "description": "Inserts summary in the lecture"
+  },
+
+  "Insert Numeric Ordered List": {
+    "prefix": "ol1",
+    "body": [
+      "<div style=\"line-height: 2.0; text-align: justify;\">",
+	    "  <ol style=\"1\">",
+		  "    <li>$1</li>",
+		  "    <li>$2</li>",
+		  "    <li>$3</li>",
+		  "    <li>$4</li>",
+	    "  </ol>",
+      "</div>$0"
+    ],
+    "description": "Inserts numeric ordered list"
+  },
+
+  "Insert Alphabetic Ordered List": {
+    "prefix": "ola",
+    "body": [
+      "<div style=\"line-height: 2.0; text-align: justify;\">",
+	    "  <ol style=\"A\">",
+		  "    <li>$1</li>",
+		  "    <li>$2</li>",
+		  "    <li>$3</li>",
+		  "    <li>$4</li>",
+	    "  </ol>",
+      "</div>$0"
+    ],
+    "description": "Inserts alphabetic ordered list"
+  },
+
+  "Insert Roman Ordered List": {
+    "prefix": "oli",
+    "body": [
+      "<div style=\"line-height: 2.0; text-align: justify;\">",
+	    "  <ol style=\"I\">",
+		  "    <li>$1</li>",
+		  "    <li>$2</li>",
+		  "    <li>$3</li>",
+		  "    <li>$4</li>",
+	    "  </ol>",
+      "</div>$0"
+    ],
+    "description": "Inserts roman ordered list"
+  },
+
+  "Insert Numeric Ordered Sublist": {
+    "prefix": "os1",
+    "body": [
+	    "<ol style=\"1\">",
+		  "  <li>$1</li>",
+		  "  <li>$2</li>",
+		  "  <li>$3</li>",
+		  "  <li>$4</li>",
+	    "</ol>$0"
+    ],
+    "description": "Inserts numeric ordered sublist"
+  },
+
+  "Insert Alphabetic Ordered Sublist": {
+    "prefix": "osa",
+    "body": [
+	    "<ol style=\"A\">",
+		  "  <li>$1</li>",
+		  "  <li>$2</li>",
+		  "  <li>$3</li>",
+		  "  <li>$4</li>",
+	    "</ol>$0"
+    ],
+    "description": "Inserts alphabetic ordered sublist"
+  },
+
+  "Insert Roman Ordered Sublist": {
+    "prefix": "osi",
+    "body": [
+	    "<ol style=\"I\">",
+		  "  <li>$1</li>",
+		  "  <li>$2</li>",
+		  "  <li>$3</li>",
+		  "  <li>$4</li>",
+	    "</ol>$0"
+    ],
+    "description": "Inserts roman ordered sublist"
+  },
+
+  "Insert Unordered Disk List": {
+    "prefix": "uld",
+    "body": [
+	    "<div style=\"line-height: 2.0; text-align: justify;\">",
+	    "  <ul style=\"list-style-type:disc\">",
+		  "    <li>$1</li>",
+		  "    <li>$2</li>",
+		  "    <li>$3</li>",
+		  "    <li>$4</li>",
+	    "  </ul>",
+      "</div>$0"
+    ],
+    "description": "Inserts unordered disk list"
+  },
+
+  "Insert Unordered Circle List": {
+    "prefix": "ulc",
+    "body": [
+	    "<div style=\"line-height: 2.0; text-align: justify;\">",
+	    "  <ul style=\"list-style-type:cricle\">",
+		  "    <li>$1</li>",
+		  "    <li>$2</li>",
+		  "    <li>$3</li>",
+		  "    <li>$4</li>",
+	    "  </ul>",
+      "</div>$0"
+    ],
+    "description": "Inserts unordered circle list"
+  },
+
+  "Insert Unordered Square List": {
+    "prefix": "uls",
+    "body": [
+	    "<div style=\"line-height: 2.0; text-align: justify;\">",
+	    "  <ul style=\"list-style-type:square\">",
+		  "    <li>$1</li>",
+		  "    <li>$2</li>",
+		  "    <li>$3</li>",
+		  "    <li>$4</li>",
+	    "  </ul>",
+      "</div>$0"
+    ],
+    "description": "Inserts unordered square list"
+  },
+
+  "Insert Unordered Disk Sublist": {
+    "prefix": "usd",
+    "body": [
+	    "<ul style=\"list-style-type:disk\">",
+		  "  <li>$1</li>",
+		  "  <li>$2</li>",
+		  "  <li>$3</li>",
+		  "  <li>$4</li>",
+	    "</ul>$0"
+    ],
+    "description": "Inserts unordered disk sublist"
+  },
+
+  "Insert Unordered Circle Sublist": {
+    "prefix": "usc",
+    "body": [
+	    "<ul style=\"list-style-type:circle\">",
+		  "  <li>$1</li>",
+		  "  <li>$2</li>",
+		  "  <li>$3</li>",
+		  "  <li>$4</li>",
+	    "</ul>$0"
+    ],
+    "description": "Inserts unordered disk sublist"
+  },
+
+  "Insert Unordered Square Sublist": {
+    "prefix": "uss",
+    "body": [
+	    "<ul style=\"list-style-type:square\">",
+		  "  <li>$1</li>",
+		  "  <li>$2</li>",
+		  "  <li>$3</li>",
+		  "  <li>$4</li>",
+	    "</ul>$0"
+    ],
+    "description": "Inserts unordered square sublist"
+  },
+
+  "Insert Weblink": {
+		"prefix": "weblink",
+		"body": [
+			"<a href=\"https://www.$1\" target=\"_blank\">$2</a>"
+		],
+    "description": "Inserts a website link"
+	},
+
+  "Insert Hyperlink": {
+		"prefix": "hyperlink",
+		"body": [
+			"<a href=\"../codes/$1\" download>$2</a>"
+		],
+    "description": "Inserts a file link"
+	},
+
+  "Insert Example": {
+		"prefix": "example",
+		"body": [
+      "<style>",
+      ".line-container {",
+      "  position: relative;",
+      "  margin-left: 0px; /* spacing from other elements */",
+      "  margin-right: 0px;",
+      "  margin-top: 20px;",
+      "  margin-bottom: 20px;",
+      "}",
+      "",
+      ".horizontal-line {",
+      "  height: 2px; /* Line thickness */",
+      "  background-color: blue; /* Line color */",
+      "  width: 100%; /* Full width line */",
+      "}",
+      "",
+      "  .top-box {",
+      "  width: 10px; /* Box width */",
+      "  height: 10px; /* Box height */",
+      "  background-color: red; /* Box color */",
+      "  position: absolute;",
+      "  top: 100%; /* Position just below the line */",
+      "  left: 0; /* Align to the left side */",
+      "  margin-top: 0px; /* Optional spacing between line and box */",
+      "}",
+      "",
+      ".bottom-box {",
+      "  width: 10px; /* Box width */",
+      "  height: 10px; /* Box height */",
+      "  background-color: red; /* Box color */",
+      "  position: absolute;",
+      "  bottom: 100%; /* Position just below the line */",
+      "  right: 0%; /* Align to the left side */",
+      "  margin-top: 0px; /* Optional spacing between line and box */",
+      "}",
+      "</style>",
+      "",
+      "<div class=\"line-container\">",
+      "  <div class=\"horizontal-line\"></div>",
+      "  <div class=\"top-box\"></div>",
+      "</div>",
+      "",
+      "<p style=\"line-height: 2.0;\">",
+      "<h3 style=\"color: blue; font-weight: bold; line-height: 2.0;\">Example $1</h3>",
+      "$2",
+      "<h3 style=\"color: blue; font-weight: bold; line-height: 2.0;\">Solution</h3>",
+      "$3",
+      "</p>",
+      "<div class=\"line-container\">",
+      "<div class=\"horizontal-line\"></div>",
+      "<div class=\"bottom-box\"></div>",
+      "</div>$0"
+    ],
+    "description": "Inserts example"
+	},
+
+  "Insert Display Equation": {
+		"prefix": "equation",
+		"body": [
+      "<style>",
+			"  .math-container {",
+      "  max-width: 100%;",
+      "  overflow-x: auto;",
+			"  }",
+      "  mjx-container[jax=\"CHTML\"][display=\"true\"] {",
+      "    text-align: left !important;",
+      "  }",
+      "  html, body {",
+      "    margin: 0;",
+      "    padding: 0;",
+      "    overflow-y: auto; /* allow scroll if needed */",
+      "  }",
+			"</style>",
+			"<script>",
+    	"  window.MathJax = {",
+      "    tex: {",
+      "    tags: 'ams'",
+      "  },",
+      "  options: {",
+      "    fleqn: true,",
+      "    displayAlign: 'left',",
+      "    menuSettings: {",
+      "      inTabOrder: false",
+      "    }",
+      "  },",
+      "chtml: {",
+      "  linebreaks: {",
+      "    automatic: true,",
+      "    width: \"container\"",
+      "    }",
+      "  },",
+      "svg: {",
+      "  linebreaks: {",
+      "    automatic: true,",
+      "    width: \"container\"",
+      "    }",
+      "  }",
+    	"};",
+			"</script>",
+			"<style>",
+    	"  mjx-container[jax=\"CHTML\"][display=\"true\"] {",
+      "    text-align: left !important;",
+    	"  }",
+			"</style>",
+
+			"<div class=\"math-container\">",
+    	"  $$",
+    	"  \\begin{aligned}",
+    	"    $1 &=  ",
+    	"    $2 &= ",
+    	"  \\end{aligned}",
+    	"  $$",
+			"</div>",
+    	],
+    "description": "Inserts display equation"
+	},
+
+  "Insert python code": {
+		"prefix": "python",
+		"body": [
+			"<pre><code class=\"language-python\">$1</code></pre>$0",
+		],
+    "description": "Inserts a python code"
+	},
+
+  "Insert code": {
+		"prefix": "code",
+		"body": [
+			"<pre style=\"background-color: #f5f2f0; padding-left: 15px; padding-top: 10px; padding-bottom: 10px; padding-right: 15px;\"><code>$1</code></pre>$0",
+		],
+    "description": "Inserts a python code"
+	},
+  
+  "Insert inline code": {
+		"prefix": "inlinecode",
+		"body": [
+			"<code style=\"background-color: #f5f2f0; padding: 2px 4px; border-radius: 4px; font-family: monospace;\">$1</code>$0",
+		],
+    "description": "Inserts inline code"
+	},
+
+  "Insert a paragraph": {
+		"prefix": "paragraph",
+		"body": [
+			"<p style=\"line-height: 2.0; text-align: justify;\">$1</p>$0",
+		],
+    "description": "Inserts a paragraph"
+	}
+}
