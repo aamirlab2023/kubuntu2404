@@ -86,13 +86,34 @@
       "    right: 0%; /* Align to the left side */",
       "    margin-top: 0px; /* Optional spacing between line and box */",
       "  }",
-      "</style>"
+      "</style>",
+      "<style>",
+      ".definition-box {",
+      "width: 100%;",
+      "border: 2px solid navy;",
+      "border-radius: 5px;",
+      "overflow: hidden;",
+      "}",
+      ".definition-header {",
+      "background-color: navy;",
+      "color: white;",
+      "padding: 10px;",
+      "font-weight: bold;",
+      "}",
+      ".definition-body {",
+      "background-color: white;",
+      "color: navy;",
+      "padding: 15px;",
+      "line-height: 2.0;",
+      "text-align: justify;",
+      "}",
+      "</style>",
     ],
     "description": "Inserts header for markdown document"
   },
 
-  "Insert Title of the Lecture": {
-    "prefix": "title",
+  "Insert Title for Probability and Statistics Lecture": {
+    "prefix": "pstitle",
     "body": [
       "<h1 style=\"color: green; text-align: center; line-height: 2.0;\">📈 Probability and Statistics</h1>",
       "<br>",
@@ -103,7 +124,22 @@
       "<h1 style=\"color: green; text-align: center; line-height: 2.0;\">🗓️ $2, 2025</h1>",
       "<br>$0"
     ],
-    "description": "Inserts title of the lecture"
+    "description": "Inserts title for probability and statistics lecture"
+  },
+
+  "Insert Title for Computer Science Lecture": {
+    "prefix": "cstitle",
+    "body": [
+      "<h1 style=\"color: green; text-align: center; line-height: 2.0;\">🖥️ Fundamentals of Programming (CS-114)</h1>",
+      "<br>",
+      "<h1 style=\"color: blue; text-align: center; line-height: 2.0;\">📝 $1</h1>",
+      "<br>",
+      "<h1 style=\"color: red; text-align: center; line-height: 2.0;\">🎓 Dr. Aamir Alaud Din</h1>",
+      "<br>",
+      "<h1 style=\"color: green; text-align: center; line-height: 2.0;\">🗓️ $2, 2025</h1>",
+      "<br>$0"
+    ],
+    "description": "Inserts title for probability and statistics lecture"
   },
 
   "Insert Blue Color Text": {
@@ -186,28 +222,6 @@
   "Insert Definition Text Box": {
     "prefix": "definition",
     "body": [
-      "<style>",
-      ".definition-box {",
-      "width: 100%;",
-      "border: 2px solid navy;",
-      "border-radius: 5px;",
-      "overflow: hidden;",
-      "}",
-      ".definition-header {",
-      "background-color: navy;",
-      "color: white;",
-      "padding: 10px;",
-      "font-weight: bold;",
-      "}",
-      ".definition-body {",
-      "background-color: white;",
-      "color: navy;",
-      "padding: 15px;",
-      "line-height: 2.0;",
-      "text-align: justify;",
-      "}",
-      "</style>",
-      "",
       "<div class=\"definition-box\">",
       "  <div class=\"definition-header\">Definition: $1</div>",
       "  <div class=\"definition-body\">",
@@ -235,20 +249,36 @@
     "description": "Inserts a general section in the document"
   },
 
-  "Insert Level 3 Heading": {
-    "prefix": "heading",
+  "Insert Blue Heading at Level 3": {
+    "prefix": "headingb3",
     "body": [
       "<h3 style=\"color: blue; font-weight: bold; line-height: 2.0;\">$1</h3>$0",
     ],
-    "description": "Inserts level 3 heading in the document"
+    "description": "Inserts level 3 heading in blue color in the document"
   },
 
-  "Insert Red Heading": {
-    "prefix": "redheading",
+  "Insert Blue Heading at Level 4": {
+    "prefix": "headingb4",
+    "body": [
+      "<h4 style=\"color: blue; font-weight: bold; line-height: 2.0;\">$1</h4>$0",
+    ],
+    "description": "Inserts level 4 heading in blue color in the document"
+  },
+
+  "Insert Red Heading at Level 3": {
+    "prefix": "headingr3",
     "body": [
       "<h3 style=\"color: red; font-weight: bold; line-height: 2.0;\">$1</h3>$0",
     ],
-    "description": "Inserts red color heading in the document"
+    "description": "Inserts red color heading of level 3 in the document"
+  },
+
+  "Insert Red Heading at Level 4": {
+    "prefix": "headingr4",
+    "body": [
+      "<h4 style=\"color: red; font-weight: bold; line-height: 2.0;\">$1</h4>$0",
+    ],
+    "description": "Inserts red color heading of level 4 in the document"
   },
 
   "Insert List Elements": {
@@ -494,7 +524,7 @@
   "Insert Weblink": {
 		"prefix": "weblink",
 		"body": [
-			"<a href=\"https://www.$1\" target=\"_blank\">$2</a>"
+			"<a href=\"$1\" target=\"_blank\">$2</a>"
 		],
     "description": "Inserts a website link"
 	},
@@ -510,53 +540,16 @@
   "Insert Example": {
 		"prefix": "example",
 		"body": [
-      "<style>",
-      ".line-container {",
-      "  position: relative;",
-      "  margin-left: 0px; /* spacing from other elements */",
-      "  margin-right: 0px;",
-      "  margin-top: 20px;",
-      "  margin-bottom: 20px;",
-      "}",
-      "",
-      ".horizontal-line {",
-      "  height: 2px; /* Line thickness */",
-      "  background-color: blue; /* Line color */",
-      "  width: 100%; /* Full width line */",
-      "}",
-      "",
-      "  .top-box {",
-      "  width: 10px; /* Box width */",
-      "  height: 10px; /* Box height */",
-      "  background-color: red; /* Box color */",
-      "  position: absolute;",
-      "  top: 100%; /* Position just below the line */",
-      "  left: 0; /* Align to the left side */",
-      "  margin-top: 0px; /* Optional spacing between line and box */",
-      "}",
-      "",
-      ".bottom-box {",
-      "  width: 10px; /* Box width */",
-      "  height: 10px; /* Box height */",
-      "  background-color: red; /* Box color */",
-      "  position: absolute;",
-      "  bottom: 100%; /* Position just below the line */",
-      "  right: 0%; /* Align to the left side */",
-      "  margin-top: 0px; /* Optional spacing between line and box */",
-      "}",
-      "</style>",
-      "",
       "<div class=\"line-container\">",
       "  <div class=\"horizontal-line\"></div>",
       "  <div class=\"top-box\"></div>",
       "</div>",
       "",
-      "<p style=\"line-height: 2.0;\">",
       "<h3 style=\"color: blue; font-weight: bold; line-height: 2.0;\">Example $1</h3>",
-      "$2",
+      "<p style=\"line-height: 2.0;\">$2</p>",
       "<h3 style=\"color: blue; font-weight: bold; line-height: 2.0;\">Solution</h3>",
-      "$3",
-      "</p>",
+      "<p style=\"line-height: 2.0;\">$3</p>",
+      "",
       "<div class=\"line-container\">",
       "<div class=\"horizontal-line\"></div>",
       "<div class=\"bottom-box\"></div>",
@@ -565,65 +558,32 @@
     "description": "Inserts example"
 	},
 
-  "Insert Display Equation": {
-		"prefix": "equation",
+  "Insert Aligned Display Equation": {
+		"prefix": "aligned",
 		"body": [
-      "<style>",
-			"  .math-container {",
-      "  max-width: 100%;",
-      "  overflow-x: auto;",
-			"  }",
-      "  mjx-container[jax=\"CHTML\"][display=\"true\"] {",
-      "    text-align: left !important;",
-      "  }",
-      "  html, body {",
-      "    margin: 0;",
-      "    padding: 0;",
-      "    overflow-y: auto; /* allow scroll if needed */",
-      "  }",
-			"</style>",
-			"<script>",
-    	"  window.MathJax = {",
-      "    tex: {",
-      "    tags: 'ams'",
-      "  },",
-      "  options: {",
-      "    fleqn: true,",
-      "    displayAlign: 'left',",
-      "    menuSettings: {",
-      "      inTabOrder: false",
-      "    }",
-      "  },",
-      "chtml: {",
-      "  linebreaks: {",
-      "    automatic: true,",
-      "    width: \"container\"",
-      "    }",
-      "  },",
-      "svg: {",
-      "  linebreaks: {",
-      "    automatic: true,",
-      "    width: \"container\"",
-      "    }",
-      "  }",
-    	"};",
-			"</script>",
-			"<style>",
-    	"  mjx-container[jax=\"CHTML\"][display=\"true\"] {",
-      "    text-align: left !important;",
-    	"  }",
-			"</style>",
-
 			"<div class=\"math-container\">",
     	"  $$",
     	"  \\begin{aligned}",
     	"    $1 &=  ",
-    	"    $2 &= ",
     	"  \\end{aligned}",
     	"  $$",
 			"</div>",
     	],
-    "description": "Inserts display equation"
+    "description": "Inserts aligned display equation"
+	},
+
+  "Insert Left Aligned Display Equation": {
+		"prefix": "flaligned",
+		"body": [
+			"<div class=\"math-container\">",
+    	"  $$",
+    	"  \\begin{flaligned}",
+    	"    &$1 =  &",
+    	"  \\end{flaligned}",
+    	"  $$",
+			"</div>",
+    	],
+    "description": "Inserts left aligned display equation"
 	},
 
   "Insert python code": {
@@ -642,7 +602,7 @@
     "description": "Inserts a python code"
 	},
   
-  "Insert inline code": {
+  "Insert Inline Code": {
 		"prefix": "inlinecode",
 		"body": [
 			"<code style=\"background-color: #f5f2f0; padding: 2px 4px; border-radius: 4px; font-family: monospace;\">$1</code>$0",
@@ -650,11 +610,28 @@
     "description": "Inserts inline code"
 	},
 
-  "Insert a paragraph": {
+  "Insert a Paragraph": {
 		"prefix": "paragraph",
 		"body": [
 			"<p style=\"line-height: 2.0; text-align: justify;\">$1</p>$0",
 		],
     "description": "Inserts a paragraph"
+	},
+
+  "Insert a Conclusion": {
+		"prefix": "conclusion",
+		"body": [
+			"<h3 style=\"color: green; font-weight: bold; line-height: 2.0;\">Conclusion</h3>",
+      "<div style=\"line-height: 2.0; text-align: justify; color: green;\">",
+      "  <ul style=\"list-style-type:disc\">",
+      "    <li></li>",
+      "    <li></li>",
+      "    <li></li>",
+      "    <li></li>",
+      "    <li></li>",
+      "  </ul>",
+      "</div>"
+		],
+    "description": "Inserts a conclusion"
 	}
 }
