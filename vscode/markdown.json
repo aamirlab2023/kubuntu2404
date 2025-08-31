@@ -505,7 +505,6 @@
   "Insert Python Code": {
     "prefix": "pcode",
     "body": [
-      "<br>",
       "<span style=\"font-size: 45px;\">",
       "",
       "```python",
@@ -520,7 +519,6 @@
   "Insert General Code": {
     "prefix": "gcode",
     "body": [
-      "<br>",
       "<span style=\"font-size: 45px;\">",
       "",
       "```c#",
