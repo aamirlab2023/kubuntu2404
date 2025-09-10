@@ -33,8 +33,6 @@
       "    right: 0%; /* Align to the left side */",
       "    margin-top: 0px; /* Optional spacing between line and box */",
       "  }",
-      "</style>",
-      "<style>",
       "  .definition-box {",
       "    width: 100%;",
       "    border: 2px solid navy;",
@@ -64,14 +62,13 @@
   "Insert Fundamentals of Programming Lecture Title": {
     "prefix": "cstitle",
     "body": [
-	  "<br><br><br><br><br><br><br>",
       "<div style=\"background-color: black; padding: 20px; border-radius: 40px;\">",
       "  <h1 style=\"font-size: 82px; font-weight: bold; text-align: center; line-height: 2.0; margin: 0; color: orange;\">🖥️ Fundamentals of Programming</h1>",
       "  <h1 style=\"font-size: 72px; font-weight: bold; text-align: center; line-height: 2.0; margin: 0; color: orange;\">📝 $1</h1>",
       "  <h1 style=\"font-size: 72px; font-weight: bold; text-align: center; line-height: 2.0; margin: 0; color: red;\">🎓 Dr. Aamir Alaud Din</h1>",
-      "  <h1 style=\"font-size: 72px; font-weight: bold; text-align: center; line-height: 2.0; margin: 0; color: green;\">🗓️ $2, 2025</h1>",
+      "  <h1 style=\"font-size: 72px; font-weight: bold; text-align: center; line-height: 2.0; margin: 0; color: green;\">📅 $2, 2025</h1>",
       "</div>",
-      "<br><br><br><br><br><br><br><br><br><br><br><br>$0"
+      "<br><br><br>$0"
     ],
     "description": "Inserts header for markdown document"
   },
@@ -505,6 +502,7 @@
   "Insert Python Code": {
     "prefix": "pcode",
     "body": [
+      "<br>",
       "<span style=\"font-size: 45px;\">",
       "",
       "```python",
@@ -519,6 +517,7 @@
   "Insert General Code": {
     "prefix": "gcode",
     "body": [
+      "<br>",
       "<span style=\"font-size: 45px;\">",
       "",
       "```c#",
@@ -574,5 +573,35 @@
 			"<a href=\"../codes/$1\" download>$2</a>"
 		],
     "description": "Inserts a file link"
+	},
+
+  "Insert Top Line": {
+		"prefix": "topline",
+		"body": [
+			"<div class=\"line-container\">",
+      "<div class=\"horizontal-line\"></div>",
+      "<div class=\"top-box\"></div>",
+      "</div>"
+		],
+    "description": "Inserts a line above example"
+	},
+
+  "Insert Bottom Line": {
+		"prefix": "bottomline",
+		"body": [
+			"<div class=\"line-container\">",
+      "<div class=\"horizontal-line\"></div>",
+      "<div class=\"bottom-box\"></div>",
+      "</div>"
+		],
+    "description": "Inserts a line below example"
+	},
+
+  "Insert Table Caption": {
+		"prefix": "caption",
+		"body": [
+			"<p style=\"font-size: 52px; line-height: 2.0; padding-left: 95px; text-align: center;\"><strong>Table $1.</strong> $2.</p>$0"
+		],
+    "description": "Inserts a caption"
 	}
 }
